@@ -1,0 +1,7 @@
+{
+  "builders": [{
+    "type": "digitalocean",
+    "region": "Amsterdam",
+    "image": "CoreOS 444.5.0 (stable)"
+  }],
+}
