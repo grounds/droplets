@@ -1,0 +1,8 @@
+{
+    "port": 8000,
+    "token": "grounds_io",
+    "hooks": {
+        "grounds_io": "pull.sh grounds_io",
+        "start": "fig up -d"
+    }
+}
