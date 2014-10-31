@@ -1,9 +1,0 @@
-{
-  "builders": [{
-    "type": "digitalocean",
-    "droplet_name": "grounds-docker-api",
-    "snapshot_name": "grounds-docker-api{{timestamp}}",
-    "region": "Amsterdam",
-    "image": "CoreOS 444.5.0 (stable)"
-  }],
-}

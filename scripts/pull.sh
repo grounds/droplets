@@ -37,3 +37,5 @@ if [ -z $1 ]; then
     echo "usage: pull [dependencies|grounds_exec|grounds_io|grounds_exec_images]"
     return
 fi
+
+eval "pull_$1"

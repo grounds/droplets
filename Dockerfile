@@ -1,5 +1,4 @@
-FROM ruby:2.1.2
-
+FROM ubuntu:14.04
 # Install dependencies
 RUN apt-get update -q && \
     apt-get install -y \
@@ -22,10 +21,13 @@ COPY . /droplets
 # Set the final working dir to the project directory
 WORKDIR /droplets
 
-# Default droplet region (Amsterdam 3)
+# Default droplet region
 ENV REGION Amsterdam 3
 
-# Default droplet size (512MB)
+# Default droplet size
 ENV SIZE 512MB
 
-ENTRYPOINT ["/packer/packer-packer"]
+# Default droplet prefix
+ENV SIZE grounds
+
+ENTRYPOINT ["/packer/packer-packer", "-var-file=images/variables.json"]

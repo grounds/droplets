@@ -15,11 +15,18 @@ is running code inside docker containers with this API.
                -e DIGITALOCEAN_CLIENT_ID=<your digital ocean client id>
                grounds/droplets
 
+Building an image will create a snapshot on digital ocean named:
+
+    {{ prefix }}-{{ image }}-{{ timestamp }}
+
+e.g: `grounds-docker-host-1414376691`
+
 ## Environment variables
 
 You can customize droplets with environment variables:
 
 * `REPOSITORY`: Repository to look for Grounds docker images. (default: `grounds`).
+* `PREFIX`: Name prefix (default: `grounds`).
 * `REGION`: DigitalOcean region (default: `Amsterdam 3`).
 * `SIZE`: DigitalOcean size (default: `512mb`).
 
