@@ -1,0 +1,10 @@
+{
+  "builders": [{
+    "type": "digitalocean",
+    "droplet_name": "{{user `prefix`}}-docker-api",
+    "snapshot_name": "{{user `prefix`}}-docker-api-{{timestamp}}",
+    "image": "CoreOS 444.5.0 (stable)",
+    "region": "{{user `region`}}",
+    "size": "{{user `size`}}"
+  }],
+}

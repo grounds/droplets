@@ -1,0 +1,17 @@
+{
+  "builders": [{
+    "type": "digitalocean",
+    "droplet_name": "{{user `prefix`}}-docker-host",
+    "snapshot_name": "{{user `prefix`}}-docker-host-{{timestamp}}",
+    "image": "Ubuntu 14.04 x64",
+    "region": "{{user `region`}}",
+    "size": "{{user `size`}}"
+  }],
+  
+  "provisioners": [{
+    "type": "shell",
+    "scripts": [
+      "scripts/provision.sh" 
+    ]
+  }]
+}

@@ -1,0 +1,9 @@
+{
+    "port": 8000,
+    "token": "grounds_exec",
+    "hooks": {
+        "grounds_exec": "pull.sh grounds_exec",
+        "grounds_exec_images": "pull.sh grounds_exec_images",
+        "start": "fig up -d"
+    }
+}

@@ -1,0 +1,5 @@
+{
+  "prefix": "{{env `PREFIX`}}",
+  "region": "{{env `REGION`}}",
+  "size": "{{env `SIZE`}}"
+}
