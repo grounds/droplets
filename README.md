@@ -19,7 +19,7 @@ is running code inside docker containers with this API.
 
 * Build docker API:
 
-        >Not implemented yet.
+        Not implemented yet.
 
 Building an image will create a snapshot on digital ocean named:
 
