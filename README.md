@@ -11,9 +11,15 @@ is running code inside docker containers with this API.
 
 ## Build droplet images
 
-    docker run -e DIGITALOCEAN_API_KEY=<your digital ocean api key>
-               -e DIGITALOCEAN_CLIENT_ID=<your digital ocean client id>
-               grounds/droplets
+* Build docker host:
+
+        docker run -e DIGITALOCEAN_API_KEY=<your digital ocean api key>
+                   -e DIGITALOCEAN_CLIENT_ID=<your digital ocean client id>
+                   grounds/droplets build images/docker_host.json
+
+* Build docker API:
+
+>Not implemented yet.
 
 Building an image will create a snapshot on digital ocean named:
 
