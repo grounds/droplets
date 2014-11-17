@@ -1,6 +1,6 @@
 # droplets
 
-Build grounds DigitalOcean droplet images like in production.
+Build [Grounds](http://beta.42grounds.io) DigitalOcean droplet images like in production.
 
 In production, Grounds is using two different types of droplets:
 
