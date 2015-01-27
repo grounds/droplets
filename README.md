@@ -1,5 +1,7 @@
 # droplets
 
+**Deprecated in favor of [Machine](https://github.com/docker/machine).**
+
 Build [Grounds](http://beta.42grounds.io) DigitalOcean droplet images like in production.
 
 In production, Grounds is using two different types of droplets:
